@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Tables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced Tables Design</h1>
+        <p>Demonstrating structured, styled, and accessible data representation.</p>
+    </header>
+
+    <main>
+        <!-- Part 1: Basic Table Creation -->
+        <section>
+            <h2>მონაწილეების სია</h2>
+            <table>
+                <caption>მონაწილეების სია</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">სახელი</th>
+                        <th scope="col">ასაკი</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>saba asd</td>
+                        <td>25</td>
+                        <td>saba.asd@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>nika asd</td>
+                        <td>30</td>
+                        <td>nika.asd@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>luka asd</td>
+                        <td>22</td>
+                        <td>luka.asd@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>gio asd</td>
+                        <td>35</td>
+                        <td>gio.asd@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>lika asd</td>
+                        <td>28</td>
+                        <td>lika.asd@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Part 2: Merging Cells -->
+        <section>
+            <h2>კვირის აქტივობების განრიგი</h2>
+            <table>
+                <caption>კვირის აქტივობების განრიგი</caption>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>ორშაბათი</th>
+                        <th>სამშაბათი</th>
+                        <th>ოთშაბათი</th>
+                        <th>ხუთშაბათი</th>
+                        <th>პარასკევი</th>
+                        <th>შაბათი</th>
+                        <th>კვირა</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">დილა</th>
+                        <td rowspan="3">იოგა კლასი</td>
+                        <td>საოფისე მუშაობა</td>
+                        <td>საოფისე მუშაობა</td>
+                        <td colspan="3">კონფერენცია</td>
+                        <td>Brunch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">შუადღე</th>
+                        <td>გუნდური შეხვედრა</td>
+                        <td>გუნდური შეხვედრა</td>
+                        <td>პროექტზე მუშაობა</td>
+                        <td>Gym</td>
+                        <td>ძილი</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">საღამო</th>
+                        <td>სამზარეულოს კურსი</td>
+                        <td>კითხვა</td>
+                        <td>ფილმის საღამო </td>
+                        <td>საუზმე</td>
+                        <td>რელაქსაცია</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Part 3: Table Sectioning -->
+        <section>
+            <h2>Shopping Cart</h2>
+            <table>
+                <caption>Shopping Cart</caption>
+                <thead>
+                    <tr>
+                        <th id="item">ნითის სახელი</th>
+                        <th id="quantity">რაოდენობა</th>
+                        <th id="price">ფასი თით ნივთზე</th>
+                        <th id="total">ჯამური ფასი</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="item">Apple</td>
+                        <td headers="quantity">2</td>
+                        <td headers="price">$1.00</td>
+                        <td headers="total">$2.00</td>
+                    </tr>
+                    <tr>
+                        <td headers="item">Banana</td>
+                        <td headers="quantity">3</td>
+                        <td headers="price">$0.50</td>
+                        <td headers="total">$1.50</td>
+                    </tr>
+                    <tr>
+                        <td headers="item">Orange</td>
+                        <td headers="quantity">1</td>
+                        <td headers="price">$0.80</td>
+                        <td headers="total">$0.80</td>
+                    </tr>
+                    <tr>
+                        <td headers="item">Laptop</td>
+                        <td headers="quantity">1</td>
+                        <td headers="price">$500.00</td>
+                        <td headers="total">$500.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>$504.30</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 temo tavdgiridze table. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
